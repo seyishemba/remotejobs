@@ -37,6 +37,9 @@ body{
 .search{
 	opacity: .9
 }
+.active{
+	font-weight: bold
+}
 
 .search-filters{
 	margin-bottom: 20px
@@ -105,7 +108,8 @@ body{
 	padding: 10px 20px; 
 	float: none;
 	margin: 0px auto;
-	background: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 	border-radius: 5px
 }
 .list-link:hover{
@@ -134,6 +138,46 @@ body{
 	color: #444;
 }
 
+.job-details-image{
+	margin-top: 10px
+}
+.job-details-title{
+	font-size: 18px;
+	margin-bottom: 0px
+}
+.job-details-company{
+	margin-bottom: 0px;
+	font-weight: bold
+}
+.job-details-location{
+	font-size: 14px;
+	margin-bottom: 0px
+}
+.job-details-type{
+	font-size: 14px;
+}
+.job-details{
+	text-decoration: none;
+	width: 99%;
+	color: #444;
+	padding: 10px 20px; 
+	float: none;
+	margin: 0px auto;
+	background: white; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+.job-description{
+	height: 320px;
+	padding: 10px 20px 60px 20px;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	border: none;
+	width: 99%; 
+	float: none;
+	margin: 0px auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
 .footer-link{
 	transition: font-weight .2s;
 	text-align: center;
@@ -144,6 +188,31 @@ body{
 }
 
 
+.apply-anchor{
+  position: fixed;
+  box-shadow: 0 -14px 10px 0 rgba(255, 255, 255, .7);
+  float: none;
+  padding: 0px;
+  padding-bottom: 15px;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  background: rgba(255,255,255,.7);
+  bottom: 55px;
+}
+.applybtn{
+	border-radius: 20px;
+	margin-right: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.favorites-btn{
+	border-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
 
 .footer {
   position: fixed;
@@ -153,5 +222,4 @@ body{
   padding: 15px; 
   font-weight: ; 
   color: rgba(0,0,0,1); 
-  box-shadow: 0 -4px 8px 0 rgb(210, 219, 222)
 }
