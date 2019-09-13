@@ -72,6 +72,8 @@ body{
 
 .list-link-a, .list-link-a:hover{
 	text-decoration: none;
+	margin-bottom: 20px;
+	display: block;
 }
 .list-image{
 	margin-top: 10px

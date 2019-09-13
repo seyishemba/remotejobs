@@ -13,11 +13,10 @@
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
-    <style>
+    <!-- INCLUDE ANGULAR JS FOR LIST POPULATING -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="assets/js/angular.js"></script>
 
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -59,21 +58,21 @@
     <!--   End Search Filters   -->
 
     <!--   Start Listing Content   -->
-        <div class="content">
-            <a href="job-details.html" class="list-link-a">
+        <div class="content" ng-app="RemoteJobs" ng-controller="jobListsCtr">
+            <a href="job-details.html" ng-repeat="x in joblists" class="list-link-a">
                 <div class="list-link">
                     <div class="row">
                         <div class="col-md-1 col-3 ">
-                            <img src="https://ui-avatars.com/api/?background=f2f2f2&color=000&name=sd&rounded=" width="100%" class="list-image">
+                            <img src="{{ x.image }}" width="100%" class="list-image">
                         </div>
                         <div class="col-md-7 col-6">
-                            <p class="list-title">Soft Ware Developer</p>
-                            <p class="list-company">Toptal</p>
-                            <p class="list-location">Berlin</p>
-                            <p class="list-type">Fully Remote</p>
+                            <p class="list-title">{{ x.title }}</p>
+                            <p class="list-company">{{ x.company }}</p>
+                            <p class="list-location">{{ x.location }}</p>
+                            <p class="list-type">{{ x.type }}</p>
                         </div>
                         <div class="col-3 col-md-4 text-right">
-                            Today
+                            {{ x.date }}
                         </div>
                     </div>
                 </div>
