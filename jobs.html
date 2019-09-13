@@ -1,46 +1,100 @@
 <!doctype html>
 <html lang="en">
-    <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="Ajayi Seyi">
-<link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
-<title>Page: Jobs </title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ajayi Seyi">
+    <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
+    <title>Page: Jobs </title>
     <!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-<link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
 
     <style>
 
     </style>
     <!-- Custom styles for this template -->
-<link href="styles.css" rel="stylesheet">
-    </head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
 <body>
 
-      <!--   START HEADER   -->
-      <header class="container-fluid ">
+    <!--   START HEADER   -->
+    <header class="container-fluid ">
         <div class="row appheader">
-          <div class="col-1">
-            <img src="assets/images/logo.png" class="logo" />
-          </div>
-          <div class="col-3">
-            <Strong>RemoteJobs</Strong>
-          </div>
-          <div class="col-8">
-            <input type="text" class="form-control" placeholder="Job Search" autofocus="" name="">
-          </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 col-md-6">
+                        <img src="assets/images/logo.png" class="logo">
+                        <Strong class="logo-text">RemoteJobs</Strong>
+                    </div>
+                    <div class="col-5 col-md-6">
+                        <input type="text" class="form-control search" placeholder="Job Search..." autofocus="" name="search">
+                    </div>
+                </div>
+            </div>
         </div>
-      </header>
-      <!--   END HEADER   -->
+    </header>
+    <!--   END HEADER   -->
 
+    <!--   START CONTENT   -->
 
-      <main role="main" class="container">
-      </main><!-- /.container -->
+    <main role="main" class="container">
 
-      <footer>
-      </footer>
+    <!--   Start Search Filters   -->
+        <div class="search-filters row">
+            <div class="col-6 search-filters-text">
+                <strong>Search Filters</strong>
+            </div>
+            <div class="col-5 filters-text">
+                Filters <span class="text-muted">(3 Applied)</span>
+                <select class="form-control filter-option">
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+    <!--   End Search Filters   -->
+
+    <!--   Start Listing Content   -->
+        <div class="content">
+            <a href="job-details.html" class="list-link-a">
+                <div class="list-link">
+                    <div class="row">
+                        <div class="col-md-1 col-3 ">
+                            <img src="https://ui-avatars.com/api/?background=f2f2f2&color=000&name=sd&rounded=" width="100%" class="list-image">
+                        </div>
+                        <div class="col-md-7 col-6">
+                            <p class="list-title">Soft Ware Developer</p>
+                            <p class="list-company">Toptal</p>
+                            <p class="list-location">Berlin</p>
+                            <p class="list-type">Fully Remote</p>
+                        </div>
+                        <div class="col-3 col-md-4 text-right">
+                            Today
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+        </div>
+    <!--   End Listing Content   -->
+
+    </main>
+    <!-- END CONTENT -->
+
+    <!--   START FOOTER   -->
+    <footer class="footer">
+        <div class="row">
+            <a class="col footer-link" href="jobs.html">Jobs</a>
+            <a class="col footer-link" href="jobs.html">Favourites</a>
+            <a class="col footer-link" href="jobs.html">Settings</a>
+        </div>
+    </footer>
+    <!--   END FOOTER   -->
+
 </body>
+
 </html>

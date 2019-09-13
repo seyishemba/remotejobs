@@ -1,7 +1,135 @@
+
+body{
+	background: #f7f7f7;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .appheader{
-	background: aliceblue;
+	background: #2e92bd;
 	padding: 15px 5px;
+	margin-bottom: 25px;
 }
 .logo{
-	width: 30px;
+	width: 40px;
+}
+.logo-text{
+	color:#f2f2f2;
+	margin-left: 10px;
+}
+.search{
+	opacity: .9
+}
+
+.search-filters{
+	margin-bottom: 20px
+}
+.search-filters-text{
+	padding-left: 30px
+}
+
+.filters-text{
+	text-align: right;
+	padding-right: 30px
+}
+
+.filter-option{
+	width: 40px; 
+	display: inline-block;
+	height: 30px; 
+	top: -3px;
+	margin-left: 10px;
+	position: absolute
+}
+
+
+.content{
+	height: 420px;
+	padding-top: 10px;
+	padding-bottom: 60px;
+	background: transparent;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.list-link-a, .list-link-a:hover{
+	text-decoration: none;
+}
+.list-image{
+	margin-top: 10px
+}
+.list-title{
+	font-size: 18px;
+	margin-bottom: 0px
+}
+.list-company{
+	margin-bottom: 0px;
+	font-weight: bold
+}
+.list-location{
+	font-size: 12px;
+	margin-bottom: 0px
+}
+.list-type{
+	font-size: 12px;
+}
+.list-link{
+	text-decoration: none;
+	width: 98%;
+	 transition: color .2s, width 0.2s linear; /* vendorless fallback */
+    -o-transition: color .2s, width 0.2s linear; /* opera */
+    -ms-transition: color .2s, width 0.2s linear; /* IE 10 */
+    -moz-transition: color .2s, width 0.2s linear; /* Firefox */
+    -webkit-transition: color .2s, width 0.2s linear; /*safari and chrome */
+	color: #444;
+	padding: 10px 20px; 
+	float: none;
+	margin: 0px auto;
+	background: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	border-radius: 5px
+}
+.list-link:hover{
+	text-decoration: none;
+	color: #0d8abc;
+	width: 99%;
+}
+
+.footer-link{
+	transition: font-weight .2s;
+	text-align: center;
+}
+.footer-link:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #eaf4f8; 
+  padding: 15px; 
+  font-weight: ; 
+  color: rgba(0,0,0,1); 
+  box-shadow: 0 -4px 8px 0 rgb(210, 219, 222)
 }
