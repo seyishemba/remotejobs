@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ajayi Seyi">
     <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
-    <title>Jobs </title>
+    <title>Favorites </title>
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -30,9 +30,6 @@
                         <img src="assets/images/logo.png" class="logo">
                         <Strong class="logo-text">RemoteJobs</Strong>
                     </div>
-                    <div class="col-5 col-md-6">
-                        <input type="text" class="form-control search" placeholder="Job Search..." autofocus="" name="search">
-                    </div>
                 </div>
             </div>
         </div>
@@ -45,21 +42,18 @@
 
     <!--   Start Search Filters   -->
         <div class="search-filters row">
-            <div class="col-6 search-filters-text">
-                <strong>Search Filters</strong>
+            <div class="col-10 favorites-title">
+                <strong>My Favorite Job Ads</strong>
             </div>
-            <div class="col-5 filters-text">
-                Filters <span class="text-muted">(3 Applied)</span>
-                <select class="form-control filter-option">
-                    <option>...</option>
-                </select>
+            <div class="col-2 favorites-text">
+               Added At
             </div>
         </div>
     <!--   End Search Filters   -->
 
     <!--   Start Listing Content   -->
         <div class="content" ng-app="RemoteJobs" ng-controller="jobListsCtr">
-            <a href="job-details.html" ng-repeat="x in joblists" class="list-link-a">
+            <a href="job-details.html" ng-repeat="x in favorites" class="list-link-a">
                 <div class="list-link">
                     <div class="row">
                         <div class="col-md-1 col-3 ">

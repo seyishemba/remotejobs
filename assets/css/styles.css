@@ -114,6 +114,12 @@ body{
 	width: 99%;
 }
 
+.favorites-title{
+	padding-left: 30px
+}
+.favorites-text{
+	text-align: left;
+}
 .footer-link{
 	transition: font-weight .2s;
 	text-align: center;
