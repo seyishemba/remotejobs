@@ -137,6 +137,15 @@ body{
 	display: block;
 	color: #444;
 }
+.profile-details-image{
+	margin-top: 10px
+}
+.profile-details-title{
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	margin-bottom: 10px
+}
 
 .job-details-image{
 	margin-top: 10px
@@ -168,7 +177,7 @@ body{
 }
 .job-description{
 	height: 320px;
-	padding: 10px 20px 60px 20px;
+	padding: 10px 20px 200px 20px;
 	background: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 	border: none;
@@ -177,6 +186,31 @@ body{
 	margin: 0px auto;
 	overflow-x: hidden;
 	overflow-y: scroll;
+}
+.profile-description{
+	height: 320px;
+	padding: 10px 20px 200px 20px;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	border: none;
+	width: 99%; 
+	float: none;
+	margin: 0px auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.profile-text{
+	font-weight: normal; margin-left: 15px
+}
+.profile-details{
+	text-decoration: none;
+	width: 99%;
+	color: #444;
+	padding: 10px 20px; 
+	float: none;
+	margin: 0px auto;
+	background: white; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 .footer-link{
 	transition: font-weight .2s;
@@ -187,6 +221,19 @@ body{
 	text-decoration: none;
 }
 
+
+.manage-anchor{
+  position: fixed;
+  box-shadow: 0 -14px 10px 0 rgba(255, 255, 255, .7);
+  float: none;
+  padding: 0px;
+  padding-bottom: 15px;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  background: rgba(255,255,255,.7);
+  bottom: 55px;
+}
 
 .apply-anchor{
   position: fixed;
@@ -208,6 +255,19 @@ body{
 	font-weight: bold;
 }
 .favorites-btn{
+	border-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.manage-payments-btn{
+	border-radius: 20px;
+	margin-left: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.manage-profile-btn{
 	border-radius: 20px;
 	padding-right: 20px;
 	padding-left: 20px;
