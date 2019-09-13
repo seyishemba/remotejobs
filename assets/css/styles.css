@@ -1,4 +1,4 @@
-
+/*    START   UNIVERSAL CSS RULES FOR ALL PAGES    **/
 body{
 	background: #f7f7f7;
 }
@@ -41,13 +41,6 @@ body{
 	font-weight: bold
 }
 
-.search-filters{
-	margin-bottom: 20px
-}
-.search-filters-text{
-	padding-left: 30px
-}
-
 .filters-text{
 	text-align: right;
 	padding-right: 30px
@@ -56,12 +49,18 @@ body{
 .filter-option{
 	width: 40px; 
 	display: inline-block;
-	height: 30px; 
+	height: 30px;
 	top: -3px;
 	margin-left: 10px;
 	position: absolute
 }
 
+.search-filters{
+	margin-bottom: 20px
+}
+.search-filters-text{
+	padding-left: 30px
+}
 
 .content{
 	height: 420px;
@@ -118,6 +117,38 @@ body{
 	width: 99%;
 }
 
+.footer-link{
+	transition: font-weight .2s;
+	text-align: center;
+}
+.footer-link:hover{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #eaf4f8; 
+  padding: 15px; 
+  font-weight: ; 
+  color: rgba(0,0,0,1); 
+  box-shadow: 0 -4px 8px 0 rgb(210, 219, 222)
+}
+.footer-alt {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #eaf4f8; 
+  padding: 15px; 
+  font-weight: ; 
+  color: rgba(0,0,0,1); 
+}
+/*    END   UNIVERSAL CSS RULES FOR ALL PAGES    **/
+
+/*    FAVOURITES CSS   **/
+
 .favorites-title{
 	padding-left: 30px
 }
@@ -125,6 +156,9 @@ body{
 	text-align: right;
 	padding-right: 50px;
 }
+
+
+/*    SETTINGS CSS   **/
 
 .settings-list{
 	background: white;
@@ -137,6 +171,9 @@ body{
 	display: block;
 	color: #444;
 }
+
+/*    PROFILE CSS   **/
+
 .profile-details-image{
 	margin-top: 10px
 }
@@ -147,58 +184,6 @@ body{
 	margin-bottom: 10px
 }
 
-.job-details-image{
-	margin-top: 10px
-}
-.job-details-title{
-	font-size: 18px;
-	margin-bottom: 0px
-}
-.job-details-company{
-	margin-bottom: 0px;
-	font-weight: bold
-}
-.job-details-location{
-	font-size: 14px;
-	margin-bottom: 0px
-}
-.job-details-type{
-	font-size: 14px;
-}
-.job-details{
-	text-decoration: none;
-	width: 99%;
-	color: #444;
-	padding: 10px 20px; 
-	float: none;
-	margin: 0px auto;
-	background: white; 
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-.job-description{
-	height: 320px;
-	padding: 10px 20px 200px 20px;
-	background: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-	border: none;
-	width: 99%; 
-	float: none;
-	margin: 0px auto;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-.profile-description{
-	height: 320px;
-	padding: 10px 20px 200px 20px;
-	background: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-	border: none;
-	width: 99%; 
-	float: none;
-	margin: 0px auto;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
 .profile-text{
 	font-weight: normal; margin-left: 15px
 }
@@ -212,15 +197,6 @@ body{
 	background: white; 
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
-.footer-link{
-	transition: font-weight .2s;
-	text-align: center;
-}
-.footer-link:hover{
-	font-weight: bold;
-	text-decoration: none;
-}
-
 
 .manage-anchor{
   position: fixed;
@@ -233,6 +209,82 @@ body{
   width: 100%;
   background: rgba(255,255,255,.7);
   bottom: 55px;
+}
+
+.profile-description{
+	height: 320px;
+	padding: 10px 20px 200px 20px;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	border: none;
+	width: 99%; 
+	float: none;
+	margin: 0px auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.manage-payments-btn{
+	border-radius: 20px;
+	margin-left: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.manage-profile-btn{
+	border-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+
+
+/*    JOB DETAILS CSS   **/
+
+.job-details-image{
+	margin-top: 10px
+}
+.job-details-title{
+	font-size: 18px;
+	margin-bottom: 0px
+}
+.job-details-company{
+	margin-bottom: 0px;
+	font-weight: bold
+}
+
+.job-details-location{
+	font-size: 14px;
+	margin-bottom: 0px
+}
+
+.job-details-type{
+	font-size: 14px;
+}
+
+.job-details{
+	text-decoration: none;
+	width: 99%;
+	color: #444;
+	padding: 10px 20px; 
+	float: none;
+	margin: 0px auto;
+	background: white; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.job-description{
+	height: 320px;
+	padding: 10px 20px 200px 20px;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	border: none;
+	width: 99%; 
+	float: none;
+	margin: 0px auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .apply-anchor{
@@ -260,19 +312,9 @@ body{
 	padding-left: 20px;
 	font-weight: bold;
 }
-.manage-payments-btn{
-	border-radius: 20px;
-	margin-left: 10px;
-	padding-right: 20px;
-	padding-left: 20px;
-	font-weight: bold;
-}
-.manage-profile-btn{
-	border-radius: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
-	font-weight: bold;
-}
+
+
+/*    LOGIN / REGISTER CSS   **/
 
 .login-list{
 	background: white;
@@ -356,23 +398,4 @@ body{
 
 .login-link{
 	margin-top: 10px;
-}
-.footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background: #eaf4f8; 
-  padding: 15px; 
-  font-weight: ; 
-  color: rgba(0,0,0,1); 
-  box-shadow: 0 -4px 8px 0 rgb(210, 219, 222)
-}
-.footer-alt {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background: #eaf4f8; 
-  padding: 15px; 
-  font-weight: ; 
-  color: rgba(0,0,0,1); 
 }
