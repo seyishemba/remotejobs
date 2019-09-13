@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ajayi Seyi">
+    <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
+    <title>Favorites </title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- INCLUDE ANGULAR JS FOR LIST POPULATING -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="assets/js/angular.js"></script>
+
+</head>
+
+<body>
+
+    <!--   START HEADER   -->
+    <header class="container-fluid ">
+        <div class="row appheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 col-md-6">
+                        <img src="assets/images/logo.png" class="logo">
+                        <Strong class="logo-text">RemoteJobs</Strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--   END HEADER   -->
+
+    <!--   START CONTENT   -->
+
+    <main role="main" class="container">
+
+    <!--   Start Title Filters   -->
+        <div class="search-filters row">
+            <div class="col-8 favorites-title">
+                <strong>My Applications</strong>
+            </div>
+            <div class="col-4 favorites-text">
+               Applied On:
+            </div>
+        </div>
+    <!--   End Title Filters   -->
+
+    <!--   Start Listing Content   -->
+        <div class="content" ng-app="RemoteJobs" ng-controller="jobListsCtr">
+            <a href="job-details.html" ng-repeat="x in myapplications" class="list-link-a">
+                <div class="list-link">
+                    <div class="row">
+                        <div class="col-md-8 col-8">
+                            <p class="list-title">{{ x.title }}</p>
+                            <p class="list-company">{{ x.company }}</p>
+                            <p class="list-location">{{ x.location }}</p>
+                            <p class="list-type">{{ x.type }}</p>
+                        </div>
+                        <div class="col-4 col-md-4 text-right">
+                            {{ x.date }}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <br>
+        </div>
+    <!--   End Listing Content   -->
+
+    </main>
+    <!-- END CONTENT -->
+
+    <!--   START FOOTER   -->
+    <footer class="footer">
+        <div class="row">
+            <a class="col footer-link" href="jobs.html">Jobs</a>
+            <a class="col footer-link active" href="favorites.html">Favourites</a>
+            <a class="col footer-link" href="settings.html">Settings</a>
+        </div>
+    </footer>
+    <!--   END FOOTER   -->
+
+</body>
+
+</html>
