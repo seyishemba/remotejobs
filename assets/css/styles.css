@@ -220,6 +220,12 @@ body{
 	border-radius: 5px;
 	border: 1px solid #f2f2f2;
 }
+.login-bg{
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #f2f2f2;
+}
 .linkedin{
 	background: #0e76a8;
 	color:whitesmoke;
@@ -234,16 +240,60 @@ body{
 	background: #0a557a;
 	color: white;
 }
+
+.login{
+	background: #0e76a8;
+	color:whitesmoke;
+}
+.login:hover{
+	background: #0a557a;
+	color: white;
+}
+
+.linkedin-alt{
+	background: #fff;
+	padding: 15px !important;
+	border: 1px solid #ccc !important;
+}
+.google-alt{
+	padding: 15px !important;
+	padding-top: 0px;
+	border: 1px solid #ccc !important;
+}
+.google-alt:hover{
+	background: #f2f2f2
+}
+.linkedin-alt:hover{
+	background: #f2f2f2;
+}
 .login-list .btn{
 	border: none;
 	border-radius: 30px;
 	padding: 15px 25px;
+}
+.login-input{
+	padding: 20px 8px
+}
+.login-label{
+	margin-bottom: 5px;
+	margin-left: 5px
 }
 .login-list .btn img{
 	float: left;
     left: 100px;
     width: 30px;
 }
+.login-bg .btn{
+	border: none;
+	padding: 15px 25px;
+	border-radius: 30px;
+}
+.login-bg .btn img{
+	float: left;
+    left: 100px;
+    width: 30px;
+}
+
 .login-link{
 	margin-top: 10px;
 }
