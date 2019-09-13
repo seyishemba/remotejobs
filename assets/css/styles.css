@@ -214,7 +214,50 @@ body{
 	font-weight: bold;
 }
 
+.login-list{
+	background: white;
+	padding: 50px;
+	border-radius: 5px;
+	border: 1px solid #f2f2f2;
+}
+.linkedin{
+	background: #0e76a8;
+	color:whitesmoke;
+}
+.google{
+	border: 1px solid #ccc !important;
+}
+.google:hover{
+	background: #f2f2f2
+}
+.linkedin:hover{
+	background: #0a557a;
+	color: white;
+}
+.login-list .btn{
+	border: none;
+	border-radius: 30px;
+	padding: 15px 25px;
+}
+.login-list .btn img{
+	float: left;
+    left: 100px;
+    width: 30px;
+}
+.login-link{
+	margin-top: 10px;
+}
 .footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #eaf4f8; 
+  padding: 15px; 
+  font-weight: ; 
+  color: rgba(0,0,0,1); 
+  box-shadow: 0 -4px 8px 0 rgb(210, 219, 222)
+}
+.footer-alt {
   position: fixed;
   width: 100%;
   bottom: 0;
